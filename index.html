@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="main.js"></script>
+    <h1>Rock-Paper-Scissors</h1>
+    <div class="startgame">
+       <p>Rules of the Game</p>
+       <div>
+         <ul>
+            <li>Rock   BEATS  Scissors</li>
+             <li>Scissors  BEATS   Paper</li> 
+             <li>Paper  BEATS  Rock</li>
+         </ul>
+      </div>
+      <p>First to score 5 points wins the game</p>
+      <button class="start-button">Start</button> 
+    </div>
+    <div class="selection-div">
+        <h2>Select your choice</h2>
+        <div class="selection-btn-container">
+        <div class="selection-btn-wrapper">
+             <img src="./Images/image copy.png" width="50px" height="auto"/>
+        <button class="selection-btn">
+            Paper ✋
+        </button>
+        </div>
+
+        <div class="selection-btn-wrapper">
+             <img src="./Images/image copy 2.png" width="50px" height="auto"/>
+        <button class="selection-btn">
+          
+            Rock ✊
+        </button>
+        </div>
+        <div class="selection-btn-wrapper"><img src="./Images/image.png" width="50px" height="auto"/>
+         <button class="selection-btn">
+            Scissors ✌
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="display-result-section">
+        <p class="userInputResult"></p>
+        <p class="computerInputResult"></p>
+    </div>
+      <div class="score-dashboard"></div>
+      <script src="main.js"></script>
 </body>
 </html>
