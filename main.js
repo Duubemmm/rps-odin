@@ -58,12 +58,9 @@ function playGame(e) {
     return; // game already over
   }
 
-  // Get player's input (strip emoji)
+  // Get player's input 
   let userInput = e.target.textContent.trim().split(" ")[0];
   userInputResult.textContent = `You chose ${userInput}`;
-
-  // Increment round
-  eachRound++;
 
   let computerMove = getComputerChoice();
 
@@ -86,6 +83,13 @@ function playGame(e) {
 
   // Show round result separately
   displayResult.textContent = roundResult;
+
+  if(roundResult = "It's a tie"){
+    eachRound;
+  }
+
+  // Increment round
+  eachRound++;
 
   // Update scoreboard
   updateScoreDisplay();
@@ -113,9 +117,10 @@ function endGame() {
 
   // Reset UI after 3 seconds
   setTimeout(() => {
-    scoreDashBoard.style.display = "none";
-    displayResult.style.display = "none";
+    scoreDashBoard.style.display = "";
+    displayResult.style.display = "";
     selectionDiv.style.display = "none";
     startGameDiv.style.display = "block";
   }, 3000);
+  
 }
